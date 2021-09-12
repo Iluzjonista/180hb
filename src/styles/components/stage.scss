@@ -11,7 +11,7 @@
         column-gap: 60px;
         row-gap: 30px;
 
-        @media (max-width: $medium-width) {
+        @media (max-width: $laptop-width) {
             grid-template-columns: 1fr;
             padding: 30px 0;
         }

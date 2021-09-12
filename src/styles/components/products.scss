@@ -6,9 +6,13 @@
         column-gap: 30px;
         row-gap: 100px;
 
+        @media (max-width: $big-width) {
+            grid-template-columns: 1fr 1fr;
+            row-gap: 30px;
+        }
+
         @media (max-width: $medium-width) {
             grid-template-columns: 1fr;
-            row-gap: 30px;
         }
     }
     &__item {
