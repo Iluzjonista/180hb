@@ -1,0 +1,43 @@
+.footer {
+    opacity: 0.5;
+    font-size: 12px;
+
+    &__wrapper {
+        padding: 20px 0;
+        max-width: 70vw;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        @media (max-width: $medium-width) {
+            max-width: 90vw;
+        }
+    }
+
+    &__links {
+        display: flex;
+        flex-direction: row;
+        @media (max-width: $medium-width) {
+            flex-direction: column;
+        }
+    }
+    &__link {
+        padding-right: 40px;
+        @media (max-width: $medium-width) {
+            padding-right: 0px;
+            padding-bottom: 10px;
+            text-align: end;
+        }
+    }
+    &__social {
+        margin-left: auto;
+        img {
+            width: auto;
+        }
+        &:not(:last-of-type) {
+            padding-right: 10px;
+        }
+    }
+}

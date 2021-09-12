@@ -1,0 +1,25 @@
+a a:hover,
+a:visited,
+a:link,
+a:active {
+  text-decoration: none;
+  color: $color-main;
+}
+.container {
+  max-width: 50vw;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (max-width: $medium-width) {
+    max-width: 80vw;
+  }
+}
+html {
+  scroll-behavior: smooth;
+  color: $color-main;
+}
+img {
+  @media (max-width: $medium-width) {
+    width: 100%;
+  }
+}
